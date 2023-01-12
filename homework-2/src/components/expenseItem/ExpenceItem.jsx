@@ -8,7 +8,7 @@ const ExpenseItem = ({ date, title, price }) => {
         <p className="p-date">{date.toString()}</p>
         <p className="title">{title}</p>
       </div>
-      <p className="price">{price} сом</p>
+      <p className="price">$ {price}</p>
     </div>
   );
 };

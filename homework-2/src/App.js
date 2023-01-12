@@ -9,7 +9,9 @@ function App() {
     {
       title: "Зубная щетка",
       price: 200,
-      date: new Date(),
+      amount:450, 
+      date: new Date()
+      
     },
   ])
 
@@ -18,10 +20,12 @@ function App() {
   updateExpenses.push(data)
     setExpenses(updateExpenses)
   }
+
+
   return (
     <div className="App">
       <div className="div">
-        <NewExpense onNewExpenseAdd={addNewExpenseHandler}/>
+        <NewExpense onNewExpenseAdd={addNewExpenseHandler} />
         <Expenses expenses={expenses} />
       </div>
     </div>

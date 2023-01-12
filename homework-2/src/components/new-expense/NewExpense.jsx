@@ -4,6 +4,7 @@ import ExpenseForm from "../expence-form/ExpenseForm";
 import "./NewExpense.css";
 
 const NewExpense = ({ onNewExpenseAdd }) => {
+  
   const [showForm, setShowForm] = useState(false);
   
   const showExpenseForm = () => {
