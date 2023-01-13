@@ -1,12 +1,16 @@
-import React from 'react';
-import "./ChartBar.css"
-const ChartBar = (props) => {
-    return (
-        <div className='chart-bar'>
-            <div className='chart-bar__inner'></div>
-            <p className='chart-bar__label'>January</p>
-        </div>
-    );
+import React from "react";
+import "./ChartBar.css";
+const ChartBar = ({ maximumPrice, currentPrice, label }) => {
+  const fillHeigt = (100 * currentPrice) / maximumPrice;
+  return (
+    <div className="chart-bar">
+      <div
+        className="chart-bar__inner"
+        style={{ height: `${fillHeigt}` }}
+      ></div>
+      <p className="chart-bar__label">{label}</p>
+    </div>
+  );
 };
 
 export default ChartBar;
